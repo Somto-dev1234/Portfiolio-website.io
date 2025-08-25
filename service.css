@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(fii.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;    
+    color: black;
+}
+header{
+    padding: 16px;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    color: black;
+}
+.nav-menu a:hover{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    margin: 16px;
+}
+.service-card {
+    background-color: rgba(255, 255, 255, 0.626);
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+}
+
+.service-card:hover{
+    transform: translate(-10px);
+    color: navy;
+}
+.service-card:focus-within{
+    transform: translate(-10px);
+    color: purple;
+}
+h1{
+    font-size: 35px;
+    font-style: oblique;
+    font-weight: bolder;
+    color: black;
+    border: 5px solid transparent;
+    border-radius: 20px;
+}
+h2{
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    color: white;
+}
+@media screen and(max-width: 768px){
+    .nav-menu {
+        flex-direction: row;
+        text-align: center;
+    }    
+}
