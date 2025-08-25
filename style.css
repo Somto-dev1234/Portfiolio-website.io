@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-image:url(smartwatch-8300238_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+header{
+    padding: 16px;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px
+}
+.nav-menu{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    position: relative;
+    color:rgba(255, 255, 255, 0.889);
+}
+.nav-menu a:hover{
+        box-shadow: 4px black;
+    transition: 0.5s ease-in-out;
+}
+
+/* .nav-menu a::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s;
+}
+.nav-menu a:hover::after{
+.nav-menu a:focus::after
+    width: 100%; */
+
+.Somto{
+    padding: 64px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+   font-size: 30px;
+    
+}
+.Somto .btn{
+    display: inline-block;
+    margin-top: 16px;
+    background: rgb(170, 13, 13);
+    color: white;
+   text-decoration: none;
+   border-radius: 1000px;
+   padding: 8px 16px;
+   transition: transform 0.5s;
+}
+
+.Somto .btn:hover{
+    transition: 0.3s ease-in-out;
+    color: black;
+    transform: scale(1.1);
+}
+h1{
+    font-size: 35px;
+    font-style: oblique;
+    font-weight: bolder;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 11px;
+    color: white; 
+}
+@media screen and(min-width: 768px){
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .text{
+        display: flex;
+        color: blue;
+    }
+}

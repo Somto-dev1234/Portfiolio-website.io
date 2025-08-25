@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(red.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+    color: black;
+}
+header{
+    background: transparent;
+    padding: 16px;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+.nav-menu a:hover{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.About{
+    max-width: 800px;
+    margin: 16px auto;
+    padding: 16px;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.About h2{
+    font-size: 32px;
+    margin-bottom: 1.5em;
+    color: white;
+    line-height: 1.7;
+}
+.About p{
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+    color: white;
+    line-height: 1.7;
+}
+.About h3{
+    font-size: 30px;
+    margin-bottom: 0.8em;
+    color: rgba(255, 255, 255, 0.948);
+    text-align: center;
+}
+.About ul{
+    list-style-type: none;
+    padding-left: 13px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.About li{
+    font-size: 1.05rem;
+    margin-bottom: 0.5em;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.footer{
+    color: white;
+    text-align: end;
+}
+@media screen and(max-width: 768px){
+    .nav-menu {
+        flex-direction: row;
+        text-align: center;
+    }
+}
